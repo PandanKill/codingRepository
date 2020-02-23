@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>JAVAEE_404NotFound_project</display-name>
+ 
+  <servlet>
+    <servlet-name>beifen</servlet-name>
+    <servlet-class>com.rng.servlet.BeiFenServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>beifen</servlet-name>
+  <url-pattern>/bei</url-pattern> 
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>huifu</servlet-name>
+    <servlet-class>com.rng.servlet.HuiFuServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>huifu</servlet-name>
+  <url-pattern>/hui</url-pattern> 
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>nihao</servlet-name>
+    <servlet-class>com.rng.servlet.ShanChuBeiFenServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>nihao</servlet-name>
+  <url-pattern>/ni</url-pattern> 
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
